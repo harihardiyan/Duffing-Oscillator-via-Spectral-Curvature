@@ -69,7 +69,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 ## 6. Citation and References
 If you use this framework in your research, please cite:
 
-1.  **Hardiyan, H. (2024).** *Stability Analysis of Non-Linear Quantum Systems via JAX-Accelerated Curvature Matrices.*
+1.  **Hardiyan, H. (2026).** *Stability Analysis of Non-Linear Quantum Systems via JAX-Accelerated Curvature Matrices.*
 2.  **Duffing, G. (1918).** *Erzwungene Schwingungen bei veränderlicher Eigenfrequenz.*
 3.  **Bradbury, J., et al. (2018).** *JAX: Composable transformations of Python+NumPy programs.* [http://github.com/google/jax](http://github.com/google/jax).
 
