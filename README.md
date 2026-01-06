@@ -59,7 +59,17 @@ Structural stability is assessed via a 3x3 curvature matrix $K$. The system is d
 *   **Precision:** Forced `x64` (double precision) for accurate eigenvalue decomposition of the Hamiltonian.
 *   **Robustness:** Automated L2-distance benchmarking between different basis sizes ($N$) to verify convergence.
 
-## 6. Installation & Usage
+## 6. Example Output & Results
+The following results were obtained using $N=128$ for the coarse map and $N=160$ for the robustness benchmark, with $\gamma=0.05$:
+
+```text
+[Coarse] PD3 fraction=100.00% | eigen-min: min=2.2951e-01, mean=8.4582e-01, q01=2.5062e-01, q05=2.9377e-01
+[Boundary] Samples=80 | alpha* range=[-2.000, 0.131]
+[Boundary observables] <x^2>: min=3.2203e-01, max=1.2797e+02 | kurtosis: mean=4.3361
+[Robustness] Boundary L2 deviation across N: 7.0356e-01
+```
+
+## 7. Installation & Usage
 To replicate the simulation:
 
 1. **Clone the repository:**
@@ -78,16 +88,16 @@ To replicate the simulation:
    python src/duffing_q1_curvature_jax.py
    ```
 
-## 7. License
+## 8. License
 This project is licensed under the **MIT License**.
 
 Copyright (c) 2024 Hari Hardiyan
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions... (See LICENSE file for full text).
 
-## 8. Citation
+## 9. Citation
 If you utilize this code for academic research, please cite:
-> **Hardiyan, H. (2024).** *Stability Mapping of Non-Linear Quantum Oscillators using JAX-Accelerated Spectral Methods.* GitHub: harihardiyan/Duffing-Oscillator-via-Spectral-Curvature.
+> **Hardiyan, H. (2026).** *Stability Mapping of Non-Linear Quantum Oscillators using JAX-Accelerated Spectral Methods.* GitHub: harihardiyan/Duffing-Oscillator-via-Spectral-Curvature.
 
 ---
 *Facilitated by AI Tamer and Microsoft Copilot as part of a computational physics development initiative.*
